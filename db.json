@@ -1,0 +1,106 @@
+{
+    "accounts": [
+        {
+            "id": "a1f3d9c0-7b21-4a9e-8f5a-1d2b3c4e5f60",
+            "name": "Main Checking Account",
+            "type": "Bank",
+            "balance": "4850.75",
+            "currency": "USD",
+            "createdAt": "2025-01-10T09:15:00Z"
+        },
+        {
+            "id": "b2e4a1f7-8c32-4d1f-9a7c-2e3f4b5c6d71",
+            "name": "Savings Account",
+            "type": "Bank",
+            "balance": "12500.00",
+            "currency": "USD",
+            "createdAt": "2025-01-15T11:30:00Z"
+        },
+        {
+            "id": "c3f5b2e8-9d43-4e2a-8c6b-3f4e5d6c7a82",
+            "name": "Cash Wallet",
+            "type": "Cash",
+            "balance": "320.40",
+            "currency": "USD",
+            "createdAt": "2025-02-01T08:00:00Z"
+        }
+    ],
+    "expenses": [
+        {
+            "id": "e101a1b2-c3d4-4e5f-8a9b-123456789001",
+            "accountId": "a1f3d9c0-7b21-4a9e-8f5a-1d2b3c4e5f60",
+            "title": "Grocery Shopping",
+            "amount": "145.32",
+            "category": "Food",
+            "vendor": "Walmart",
+            "note": "Weekly groceries and household supplies",
+            "receiptUrl": "https://example.com/receipts/grocery-jan12.jpg",
+            "createdAt": "2025-02-02T18:45:00Z"
+        },
+        {
+            "id": "e102b2c3-d4e5-4f6a-9b8c-223456789002",
+            "accountId": "a1f3d9c0-7b21-4a9e-8f5a-1d2b3c4e5f60",
+            "title": "Netflix Subscription",
+            "amount": "15.99",
+            "category": "Entertainment",
+            "vendor": "Netflix",
+            "note": "Monthly subscription",
+            "receiptUrl": "https://example.com/receipts/netflix-feb.jpg",
+            "createdAt": "2025-02-05T10:15:00Z"
+        },
+        {
+            "id": "e103c3d4-e5f6-4a7b-8c9d-323456789003",
+            "accountId": "c3f5b2e8-9d43-4e2a-8c6b-3f4e5d6c7a82",
+            "title": "Taxi Ride",
+            "amount": "22.50",
+            "category": "Transport",
+            "vendor": "Uber",
+            "note": "Airport drop-off",
+            "receiptUrl": "https://example.com/receipts/uber-feb07.jpg",
+            "createdAt": "2025-02-07T06:30:00Z"
+        },
+        {
+            "id": "e104d4e5-f6a7-4b8c-9d0e-423456789004",
+            "accountId": "a1f3d9c0-7b21-4a9e-8f5a-1d2b3c4e5f60",
+            "title": "Electricity Bill",
+            "amount": "98.76",
+            "category": "Utilities",
+            "vendor": "City Power & Light",
+            "note": "January electricity bill",
+            "receiptUrl": "https://example.com/receipts/electricity-jan.jpg",
+            "createdAt": "2025-02-08T14:20:00Z"
+        }
+    ],
+    "revenues": [
+        {
+            "id": "r201a1b2-c3d4-4e5f-8a9b-523456789005",
+            "accountId": "a1f3d9c0-7b21-4a9e-8f5a-1d2b3c4e5f60",
+            "title": "Monthly Salary",
+            "amount": "3500.00",
+            "category": "Salary",
+            "payerName": "Tech Solutions Inc.",
+            "note": "February salary",
+            "createdAt": "2025-02-01T09:00:00Z"
+        },
+        {
+            "id": "r202b2c3-d4e5-4f6a-9b8c-623456789006",
+            "accountId": "b2e4a1f7-8c32-4d1f-9a7c-2e3f4b5c6d71",
+            "title": "Freelance Project",
+            "amount": "1200.00",
+            "category": "Freelance",
+            "payerName": "Creative Agency LLC",
+            "note": "Website redesign project",
+            "createdAt": "2025-02-03T16:00:00Z"
+        },
+        {
+            "id": "r203c3d4-e5f6-4a7b-8c9d-723456789007",
+            "accountId": "b2e4a1f7-8c32-4d1f-9a7c-2e3f4b5c6d71",
+            "title": "Interest Credit",
+            "amount": "45.25",
+            "category": "Interest",
+            "payerName": "Bank of America",
+            "note": "Monthly savings interest",
+            "createdAt": "2025-02-10T12:00:00Z"
+        }
+    ]
+}
