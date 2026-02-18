@@ -1,106 +1,438 @@
 {
-    "accounts": [
-        {
-            "id": "a1f3d9c0-7b21-4a9e-8f5a-1d2b3c4e5f60",
-            "name": "Main Checking Account",
-            "type": "Bank",
-            "balance": "4850.75",
-            "currency": "USD",
-            "createdAt": "2025-01-10T09:15:00Z"
-        },
-        {
-            "id": "b2e4a1f7-8c32-4d1f-9a7c-2e3f4b5c6d71",
-            "name": "Savings Account",
-            "type": "Bank",
-            "balance": "12500.00",
-            "currency": "USD",
-            "createdAt": "2025-01-15T11:30:00Z"
-        },
-        {
-            "id": "c3f5b2e8-9d43-4e2a-8c6b-3f4e5d6c7a82",
-            "name": "Cash Wallet",
-            "type": "Cash",
-            "balance": "320.40",
-            "currency": "USD",
-            "createdAt": "2025-02-01T08:00:00Z"
-        }
-    ],
-    "expenses": [
-        {
-            "id": "e101a1b2-c3d4-4e5f-8a9b-123456789001",
-            "accountId": "a1f3d9c0-7b21-4a9e-8f5a-1d2b3c4e5f60",
-            "title": "Grocery Shopping",
-            "amount": "145.32",
-            "category": "Food",
-            "vendor": "Walmart",
-            "note": "Weekly groceries and household supplies",
-            "receiptUrl": "https://example.com/receipts/grocery-jan12.jpg",
-            "createdAt": "2025-02-02T18:45:00Z"
-        },
-        {
-            "id": "e102b2c3-d4e5-4f6a-9b8c-223456789002",
-            "accountId": "a1f3d9c0-7b21-4a9e-8f5a-1d2b3c4e5f60",
-            "title": "Netflix Subscription",
-            "amount": "15.99",
-            "category": "Entertainment",
-            "vendor": "Netflix",
-            "note": "Monthly subscription",
-            "receiptUrl": "https://example.com/receipts/netflix-feb.jpg",
-            "createdAt": "2025-02-05T10:15:00Z"
-        },
-        {
-            "id": "e103c3d4-e5f6-4a7b-8c9d-323456789003",
-            "accountId": "c3f5b2e8-9d43-4e2a-8c6b-3f4e5d6c7a82",
-            "title": "Taxi Ride",
-            "amount": "22.50",
-            "category": "Transport",
-            "vendor": "Uber",
-            "note": "Airport drop-off",
-            "receiptUrl": "https://example.com/receipts/uber-feb07.jpg",
-            "createdAt": "2025-02-07T06:30:00Z"
-        },
-        {
-            "id": "e104d4e5-f6a7-4b8c-9d0e-423456789004",
-            "accountId": "a1f3d9c0-7b21-4a9e-8f5a-1d2b3c4e5f60",
-            "title": "Electricity Bill",
-            "amount": "98.76",
-            "category": "Utilities",
-            "vendor": "City Power & Light",
-            "note": "January electricity bill",
-            "receiptUrl": "https://example.com/receipts/electricity-jan.jpg",
-            "createdAt": "2025-02-08T14:20:00Z"
-        }
-    ],
-    "revenues": [
-        {
-            "id": "r201a1b2-c3d4-4e5f-8a9b-523456789005",
-            "accountId": "a1f3d9c0-7b21-4a9e-8f5a-1d2b3c4e5f60",
-            "title": "Monthly Salary",
-            "amount": "3500.00",
-            "category": "Salary",
-            "payerName": "Tech Solutions Inc.",
-            "note": "February salary",
-            "createdAt": "2025-02-01T09:00:00Z"
-        },
-        {
-            "id": "r202b2c3-d4e5-4f6a-9b8c-623456789006",
-            "accountId": "b2e4a1f7-8c32-4d1f-9a7c-2e3f4b5c6d71",
-            "title": "Freelance Project",
-            "amount": "1200.00",
-            "category": "Freelance",
-            "payerName": "Creative Agency LLC",
-            "note": "Website redesign project",
-            "createdAt": "2025-02-03T16:00:00Z"
-        },
-        {
-            "id": "r203c3d4-e5f6-4a7b-8c9d-723456789007",
-            "accountId": "b2e4a1f7-8c32-4d1f-9a7c-2e3f4b5c6d71",
-            "title": "Interest Credit",
-            "amount": "45.25",
-            "category": "Interest",
-            "payerName": "Bank of America",
-            "note": "Monthly savings interest",
-            "createdAt": "2025-02-10T12:00:00Z"
-        }
-    ]
+  "accounts": [
+    {
+      "name": "Main Checking Account",
+      "type": "Bank",
+      "balance": "4850",
+      "currency": "USD",
+      "createdAt": "2025-01-10T09:15:00Z",
+      "id": "a1f3d9c0-7b21-4a9e-8f5a-1d2b3c4e5f60"
+    },
+    {
+      "id": "b2e4a1f7-8c32-4d1f-9a7c-2e3f4b5c6d71",
+      "name": "Savings Account",
+      "type": "Bank",
+      "balance": "12500.00",
+      "currency": "USD",
+      "createdAt": "2025-01-15T11:30:00Z"
+    },
+    {
+      "id": "c3f5b2e8-9d43-4e2a-8c6b-3f4e5d6c7a82",
+      "name": "Cash Wallet",
+      "type": "Cash",
+      "balance": "320.40",
+      "currency": "USD",
+      "createdAt": "2025-02-01T08:00:00Z"
+    },
+    {
+      "name": "Barclays",
+      "type": "Credit Card",
+      "balance": "2000",
+      "currency": "USD",
+      "createdAt": "2025-01-10T09:15:00Z",
+      "id": "hXsHmAQ"
+    }
+  ],
+  "expenses": [
+    {
+      "id": "e101a1b2-c3d4-4e5f-8a9b-123456789001",
+      "accountId": "a1f3d9c0-7b21-4a9e-8f5a-1d2b3c4e5f60",
+      "title": "Grocery Shopping",
+      "amount": "145.32",
+      "category": "Food",
+      "vendor": "Walmart",
+      "note": "Weekly groceries and household supplies",
+      "receiptUrl": "https://example.com/receipts/grocery-jan12.jpg",
+      "createdAt": "2025-12-02T18:45:00Z"
+    },
+    {
+      "id": "e102b2c3-d4e5-4f6a-9b8c-223456789002",
+      "accountId": "a1f3d9c0-7b21-4a9e-8f5a-1d2b3c4e5f60",
+      "title": "Netflix Subscription",
+      "amount": "15.99",
+      "category": "Entertainment",
+      "vendor": "Netflix",
+      "note": "Monthly subscription",
+      "receiptUrl": "https://example.com/receipts/netflix-feb.jpg",
+      "createdAt": "2026-02-05T10:15:00Z"
+    },
+    {
+      "id": "e103c3d4-e5f6-4a7b-8c9d-323456789003",
+      "accountId": "c3f5b2e8-9d43-4e2a-8c6b-3f4e5d6c7a82",
+      "title": "Taxi Ride",
+      "amount": "22.50",
+      "category": "Transport",
+      "vendor": "Uber",
+      "note": "Airport drop-off",
+      "receiptUrl": "https://example.com/receipts/uber-feb07.jpg",
+      "createdAt": "2026-01-07T06:30:00Z"
+    },
+    {
+      "id": "e104d4e5-f6a7-4b8c-9d0e-423456789004",
+      "accountId": "a1f3d9c0-7b21-4a9e-8f5a-1d2b3c4e5f60",
+      "title": "Electricity Bill",
+      "amount": "98.76",
+      "category": "Utilities",
+      "vendor": "City Power & Light",
+      "note": "January electricity bill",
+      "receiptUrl": "https://example.com/receipts/electricity-jan.jpg",
+      "createdAt": "2026-02-08T14:20:00Z"
+    },
+    {
+      "id": "e110",
+      "accountId": "a1f3d9c0-7b21-4a9e-8f5a-1d2b3c4e5f60",
+      "title": "Coffee Shop",
+      "amount": "12.50",
+      "category": "Food",
+      "vendor": "Starbucks",
+      "note": "Morning coffee",
+      "receiptUrl": "",
+      "createdAt": "2025-12-02T08:20:00Z"
+    },
+    {
+      "id": "e111",
+      "accountId": "hXsHmAQ",
+      "title": "Clothing Purchase",
+      "amount": "120.00",
+      "category": "Shopping",
+      "vendor": "Zara",
+      "note": "Winter jacket",
+      "receiptUrl": "",
+      "createdAt": "2025-12-18T17:30:00Z"
+    },
+    {
+      "id": "e112",
+      "accountId": "c3f5b2e8-9d43-4e2a-8c6b-3f4e5d6c7a82",
+      "title": "Movie Night",
+      "amount": "32.00",
+      "category": "Entertainment",
+      "vendor": "AMC",
+      "note": "Cinema tickets",
+      "receiptUrl": "",
+      "createdAt": "2025-12-22T21:00:00Z"
+    },
+    {
+      "id": "e113",
+      "accountId": "a1f3d9c0-7b21-4a9e-8f5a-1d2b3c4e5f60",
+      "title": "Internet Bill",
+      "amount": "65.00",
+      "category": "Utilities",
+      "vendor": "Comcast",
+      "note": "Monthly internet",
+      "receiptUrl": "",
+      "createdAt": "2026-01-03T10:00:00Z"
+    },
+    {
+      "id": "e114",
+      "accountId": "a1f3d9c0-7b21-4a9e-8f5a-1d2b3c4e5f60",
+      "title": "Lunch",
+      "amount": "18.75",
+      "category": "Food",
+      "vendor": "Chipotle",
+      "note": "",
+      "receiptUrl": "",
+      "createdAt": "2026-01-07T13:10:00Z"
+    },
+    {
+      "id": "e115",
+      "accountId": "hXsHmAQ",
+      "title": "Flight Ticket",
+      "amount": "450.00",
+      "category": "Travel",
+      "vendor": "Delta Airlines",
+      "note": "Business trip",
+      "receiptUrl": "",
+      "createdAt": "2026-01-15T09:45:00Z"
+    },
+    {
+      "id": "e116",
+      "accountId": "c3f5b2e8-9d43-4e2a-8c6b-3f4e5d6c7a82",
+      "title": "Books Purchase",
+      "amount": "75.20",
+      "category": "Education",
+      "vendor": "Amazon",
+      "note": "Programming books",
+      "receiptUrl": "",
+      "createdAt": "2026-01-20T16:25:00Z"
+    },
+    {
+      "id": "e117",
+      "accountId": "a1f3d9c0-7b21-4a9e-8f5a-1d2b3c4e5f60",
+      "title": "Car Insurance",
+      "amount": "210.00",
+      "category": "Insurance",
+      "vendor": "State Farm",
+      "note": "Quarterly premium",
+      "receiptUrl": "",
+      "createdAt": "2026-01-25T11:15:00Z"
+    },
+    {
+      "id": "e118",
+      "accountId": "hXsHmAQ",
+      "title": "Laptop Repair",
+      "amount": "320.00",
+      "category": "Maintenance",
+      "vendor": "Apple Store",
+      "note": "Screen replacement",
+      "receiptUrl": "",
+      "createdAt": "2026-01-29T14:00:00Z"
+    },
+    {
+      "id": "e119",
+      "accountId": "a1f3d9c0-7b21-4a9e-8f5a-1d2b3c4e5f60",
+      "title": "Pharmacy",
+      "amount": "48.60",
+      "category": "Health",
+      "vendor": "CVS",
+      "note": "",
+      "receiptUrl": "",
+      "createdAt": "2026-02-02T09:30:00Z"
+    },
+    {
+      "id": "e120",
+      "accountId": "c3f5b2e8-9d43-4e2a-8c6b-3f4e5d6c7a82",
+      "title": "Taxi Ride",
+      "amount": "27.40",
+      "category": "Transport",
+      "vendor": "Lyft",
+      "note": "",
+      "receiptUrl": "",
+      "createdAt": "2026-02-04T18:15:00Z"
+    },
+    {
+      "id": "e121",
+      "accountId": "a1f3d9c0-7b21-4a9e-8f5a-1d2b3c4e5f60",
+      "title": "Dinner",
+      "amount": "95.00",
+      "category": "Food",
+      "vendor": "Steakhouse",
+      "note": "",
+      "receiptUrl": "",
+      "createdAt": "2026-02-06T20:45:00Z"
+    },
+    {
+      "id": "e122",
+      "accountId": "hXsHmAQ",
+      "title": "Concert Ticket",
+      "amount": "150.00",
+      "category": "Entertainment",
+      "vendor": "Ticketmaster",
+      "note": "",
+      "receiptUrl": "",
+      "createdAt": "2026-02-08T19:00:00Z"
+    },
+    {
+      "id": "e124",
+      "accountId": "a1f3d9c0-7b21-4a9e-8f5a-1d2b3c4e5f60",
+      "title": "Electric Repair",
+      "amount": "230.00",
+      "category": "Maintenance",
+      "vendor": "Local Electrician",
+      "note": "",
+      "receiptUrl": "",
+      "createdAt": "2026-02-12T15:30:00Z"
+    },
+    {
+      "id": "e125",
+      "accountId": "hXsHmAQ",
+      "title": "Gym Equipment",
+      "amount": "260.00",
+      "category": "Health",
+      "vendor": "Decathlon",
+      "note": "",
+      "receiptUrl": "",
+      "createdAt": "2026-02-14T10:20:00Z"
+    },
+    {
+      "id": "e126",
+      "accountId": "a1f3d9c0-7b21-4a9e-8f5a-1d2b3c4e5f60",
+      "title": "Fuel",
+      "amount": "60.00",
+      "category": "Transport",
+      "vendor": "Shell",
+      "note": "",
+      "receiptUrl": "",
+      "createdAt": "2026-02-16T08:50:00Z"
+    },
+    {
+      "id": "e127",
+      "accountId": "c3f5b2e8-9d43-4e2a-8c6b-3f4e5d6c7a82",
+      "title": "Haircut",
+      "amount": "35.00",
+      "category": "Personal Care",
+      "vendor": "Barber Shop",
+      "note": "",
+      "receiptUrl": "",
+      "createdAt": "2026-02-18T17:00:00Z"
+    },
+    {
+      "id": "e128",
+      "accountId": "hXsHmAQ",
+      "title": "Furniture Purchase",
+      "amount": "600.00",
+      "category": "Home",
+      "vendor": "IKEA",
+      "note": "",
+      "receiptUrl": "",
+      "createdAt": "2026-02-20T14:40:00Z"
+    },
+    {
+      "id": "e129",
+      "accountId": "a1f3d9c0-7b21-4a9e-8f5a-1d2b3c4e5f60",
+      "title": "Mobile Bill",
+      "amount": "55.00",
+      "category": "Utilities",
+      "vendor": "Verizon",
+      "note": "",
+      "receiptUrl": "",
+      "createdAt": "2026-02-22T11:10:00Z"
+    },
+    {
+      "accountId": "c3f5b2e8-9d43-4e2a-8c6b-3f4e5d6c7a82",
+      "title": "Grocery shopping",
+      "amount": "50",
+      "category": "Food",
+      "vendor": "Aldi",
+      "note": "",
+      "receiptUrl": "",
+      "createdAt": "2026-02-01T00:00:00.000Z",
+      "id": "spq1V9m"
+    },
+    {
+      "accountId": "c3f5b2e8-9d43-4e2a-8c6b-3f4e5d6c7a82",
+      "title": "Grocery shopping",
+      "amount": "50",
+      "category": "Food",
+      "vendor": "Lidl",
+      "note": "",
+      "receiptUrl": "",
+      "createdAt": "2026-02-01T00:00:00.000Z",
+      "id": "_m2gSe1"
+    },
+    {
+      "accountId": "c3f5b2e8-9d43-4e2a-8c6b-3f4e5d6c7a82",
+      "title": "taxi to meet friend",
+      "amount": "16",
+      "category": "Transport",
+      "vendor": "Uber",
+      "note": "",
+      "receiptUrl": "",
+      "createdAt": "2026-02-17T00:00:00.000Z",
+      "id": "DKvjA_e"
+    },
+    {
+      "accountId": "c3f5b2e8-9d43-4e2a-8c6b-3f4e5d6c7a82",
+      "title": "dsvdvs",
+      "amount": "100",
+      "category": "Food",
+      "vendor": "",
+      "note": "",
+      "receiptUrl": "",
+      "createdAt": "2026-02-15T00:00:00.000Z",
+      "id": "82BaGnV"
+    },
+    {
+      "accountId": "c3f5b2e8-9d43-4e2a-8c6b-3f4e5d6c7a82",
+      "title": "Grocery shopping",
+      "amount": "85",
+      "category": "Food",
+      "vendor": "Edeka",
+      "note": "",
+      "receiptUrl": "",
+      "createdAt": "2026-02-01T00:00:00.000Z",
+      "id": "Z7q6Htz"
+    }
+  ],
+  "revenues": [
+    {
+      "id": "r201a1b2-c3d4-4e5f-8a9b-523456789005",
+      "accountId": "a1f3d9c0-7b21-4a9e-8f5a-1d2b3c4e5f60",
+      "title": "Monthly Salary",
+      "amount": "3500.00",
+      "category": "Salary",
+      "payerName": "Tech Solutions Inc.",
+      "note": "February salary",
+      "createdAt": "2025-12-01T09:00:00Z"
+    },
+    {
+      "id": "r202b2c3-d4e5-4f6a-9b8c-623456789006",
+      "accountId": "b2e4a1f7-8c32-4d1f-9a7c-2e3f4b5c6d71",
+      "title": "Freelance Project",
+      "amount": "1200.00",
+      "category": "Freelance",
+      "payerName": "Creative Agency LLC",
+      "note": "Website redesign project",
+      "createdAt": "2026-02-03T16:00:00Z"
+    },
+    {
+      "accountId": "b2e4a1f7-8c32-4d1f-9a7c-2e3f4b5c6d71",
+      "title": "Interest Credit",
+      "amount": "450",
+      "category": "Interest",
+      "payerName": "Bank of America",
+      "note": "Monthly savings interest",
+      "createdAt": "2026-01-10T12:00:00Z",
+      "id": "r203c3d4-e5f6-4a7b-8c9d-723456789007"
+    },
+    {
+      "id": "r209",
+      "accountId": "a1f3d9c0-7b21-4a9e-8f5a-1d2b3c4e5f60",
+      "title": "Consulting Payment",
+      "amount": "900.00",
+      "category": "Consulting",
+      "payerName": "Global Corp",
+      "note": "",
+      "createdAt": "2025-12-10T12:00:00Z"
+    },
+    {
+      "id": "r210",
+      "accountId": "b2e4a1f7-8c32-4d1f-9a7c-2e3f4b5c6d71",
+      "title": "Bonus",
+      "amount": "2000.00",
+      "category": "Bonus",
+      "payerName": "Tech Solutions Inc.",
+      "note": "",
+      "createdAt": "2025-12-28T09:00:00Z"
+    },
+    {
+      "id": "r211",
+      "accountId": "a1f3d9c0-7b21-4a9e-8f5a-1d2b3c4e5f60",
+      "title": "Freelance UI Design",
+      "amount": "650.00",
+      "category": "Freelance",
+      "payerName": "Design Studio",
+      "note": "",
+      "createdAt": "2026-01-08T15:00:00Z"
+    },
+    {
+      "id": "r212",
+      "accountId": "c3f5b2e8-9d43-4e2a-8c6b-3f4e5d6c7a82",
+      "title": "Crypto Profit",
+      "amount": "780.00",
+      "category": "Investment",
+      "payerName": "Coinbase",
+      "note": "",
+      "createdAt": "2026-01-30T18:00:00Z"
+    },
+    {
+      "id": "r213",
+      "accountId": "b2e4a1f7-8c32-4d1f-9a7c-2e3f4b5c6d71",
+      "title": "Side Project",
+      "amount": "500.00",
+      "category": "Freelance",
+      "payerName": "Local Startup",
+      "note": "",
+      "createdAt": "2026-02-11T14:00:00Z"
+    },
+    {
+      "id": "r214",
+      "accountId": "a1f3d9c0-7b21-4a9e-8f5a-1d2b3c4e5f60",
+      "title": "Refund",
+      "amount": "220.00",
+      "category": "Refund",
+      "payerName": "Amazon",
+      "note": "",
+      "createdAt": "2026-02-19T10:30:00Z"
+    }
+  ]
 }
