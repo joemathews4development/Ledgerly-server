@@ -2,8 +2,8 @@
   "accounts": [
     {
       "name": "Main Checking Account",
-      "type": "Bank",
-      "balance": "4850",
+      "type": "Savings",
+      "balance": 4800,
       "currency": "USD",
       "createdAt": "2025-01-10T09:15:00Z",
       "id": "a1f3d9c0-7b21-4a9e-8f5a-1d2b3c4e5f60"
@@ -11,8 +11,8 @@
     {
       "id": "b2e4a1f7-8c32-4d1f-9a7c-2e3f4b5c6d71",
       "name": "Savings Account",
-      "type": "Bank",
-      "balance": "12500.00",
+      "type": "Savings",
+      "balance": 10650,
       "currency": "USD",
       "createdAt": "2025-01-15T11:30:00Z"
     },
@@ -27,7 +27,7 @@
     {
       "name": "Barclays",
       "type": "Credit Card",
-      "balance": "2000",
+      "balance": 3000,
       "currency": "USD",
       "createdAt": "2025-01-10T09:15:00Z",
       "id": "hXsHmAQ"
@@ -266,28 +266,6 @@
       "createdAt": "2026-02-18T17:00:00Z"
     },
     {
-      "id": "e128",
-      "accountId": "hXsHmAQ",
-      "title": "Furniture Purchase",
-      "amount": "600.00",
-      "category": "Home",
-      "vendor": "IKEA",
-      "note": "",
-      "receiptUrl": "",
-      "createdAt": "2026-02-20T14:40:00Z"
-    },
-    {
-      "id": "e129",
-      "accountId": "a1f3d9c0-7b21-4a9e-8f5a-1d2b3c4e5f60",
-      "title": "Mobile Bill",
-      "amount": "55.00",
-      "category": "Utilities",
-      "vendor": "Verizon",
-      "note": "",
-      "receiptUrl": "",
-      "createdAt": "2026-02-22T11:10:00Z"
-    },
-    {
       "accountId": "c3f5b2e8-9d43-4e2a-8c6b-3f4e5d6c7a82",
       "title": "Grocery shopping",
       "amount": "50",
@@ -341,6 +319,28 @@
       "receiptUrl": "",
       "createdAt": "2026-02-01T00:00:00.000Z",
       "id": "Z7q6Htz"
+    },
+    {
+      "accountId": "a1f3d9c0-7b21-4a9e-8f5a-1d2b3c4e5f60",
+      "title": "KFC Lunch with friends",
+      "amount": "50",
+      "category": "Food",
+      "vendor": "KFC",
+      "note": "",
+      "receiptUrl": "",
+      "createdAt": "2026-02-19T00:00:00.000Z",
+      "id": "XT4ISDw"
+    },
+    {
+      "accountId": "b2e4a1f7-8c32-4d1f-9a7c-2e3f4b5c6d71",
+      "title": "Furniture Purchase",
+      "amount": "1400",
+      "category": "Maintainance",
+      "vendor": "IKEA",
+      "note": "",
+      "receiptUrl": "",
+      "createdAt": "2025-11-10T00:00:00.000Z",
+      "id": "wc0WNPa"
     }
   ],
   "revenues": [
@@ -363,16 +363,6 @@
       "payerName": "Creative Agency LLC",
       "note": "Website redesign project",
       "createdAt": "2026-02-03T16:00:00Z"
-    },
-    {
-      "accountId": "b2e4a1f7-8c32-4d1f-9a7c-2e3f4b5c6d71",
-      "title": "Interest Credit",
-      "amount": "450",
-      "category": "Interest",
-      "payerName": "Bank of America",
-      "note": "Monthly savings interest",
-      "createdAt": "2026-01-10T12:00:00Z",
-      "id": "r203c3d4-e5f6-4a7b-8c9d-723456789007"
     },
     {
       "id": "r209",
