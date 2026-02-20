@@ -2,19 +2,19 @@
   "accounts": [
     {
       "name": "Main Checking Account",
-      "type": "Savings",
-      "balance": 4800,
+      "type": "Wallet",
+      "balance": 4860,
       "currency": "USD",
-      "createdAt": "2025-01-10T09:15:00Z",
+      "createdAt": "2025-01-09T00:00:00.000Z",
       "id": "a1f3d9c0-7b21-4a9e-8f5a-1d2b3c4e5f60"
     },
     {
-      "id": "b2e4a1f7-8c32-4d1f-9a7c-2e3f4b5c6d71",
       "name": "Savings Account",
       "type": "Savings",
       "balance": 10650,
       "currency": "USD",
-      "createdAt": "2025-01-15T11:30:00Z"
+      "createdAt": "2025-01-15T11:30:00Z",
+      "id": "b2e4a1f7-8c32-4d1f-9a7c-2e3f4b5c6d71"
     },
     {
       "id": "c3f5b2e8-9d43-4e2a-8c6b-3f4e5d6c7a82",
@@ -244,17 +244,6 @@
       "createdAt": "2026-02-14T10:20:00Z"
     },
     {
-      "id": "e126",
-      "accountId": "a1f3d9c0-7b21-4a9e-8f5a-1d2b3c4e5f60",
-      "title": "Fuel",
-      "amount": "60.00",
-      "category": "Transport",
-      "vendor": "Shell",
-      "note": "",
-      "receiptUrl": "",
-      "createdAt": "2026-02-16T08:50:00Z"
-    },
-    {
       "id": "e127",
       "accountId": "c3f5b2e8-9d43-4e2a-8c6b-3f4e5d6c7a82",
       "title": "Haircut",
@@ -339,7 +328,7 @@
       "vendor": "IKEA",
       "note": "",
       "receiptUrl": "",
-      "createdAt": "2025-11-10T00:00:00.000Z",
+      "createdAt": "2025-11-10T22:40:00.000Z",
       "id": "wc0WNPa"
     }
   ],
@@ -415,14 +404,14 @@
       "createdAt": "2026-02-11T14:00:00Z"
     },
     {
-      "id": "r214",
       "accountId": "a1f3d9c0-7b21-4a9e-8f5a-1d2b3c4e5f60",
       "title": "Refund",
       "amount": "220.00",
       "category": "Refund",
       "payerName": "Amazon",
       "note": "",
-      "createdAt": "2026-02-19T10:30:00Z"
+      "createdAt": "2026-02-19T00:30:00.000Z",
+      "id": "r214"
     }
   ]
 }
